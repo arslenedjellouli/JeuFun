@@ -4,7 +4,7 @@ set -e
 echo "Installing dependencies..."
 npm install
 
-echo "Building application..."
-npm run build
+echo "Building application with npx..."
+npx vite build
 
 echo "Build completed successfully!"
