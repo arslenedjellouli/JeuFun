@@ -36,6 +36,10 @@ A React-based number guessing game where players try to guess a secret number. T
   - Enhanced visual feedback for guesses
   - Player statistics dashboard
 
+## 🚀 Live Demo
+
+**Play the game online:** [ArsRiwAriAmi Game](https://arsriwariami-game.onrender.com)
+
 ## Setup Instructions
 
 1. **Install Dependencies:**
@@ -50,6 +54,14 @@ A React-based number guessing game where players try to guess a secret number. T
 
 3. **Open in Browser:**
    The app will be available at `http://localhost:5173`
+
+## 🌐 Deployment
+
+This app is deployed on Render. To deploy your own version:
+
+1. Fork this repository
+2. Connect to Render
+3. Deploy automatically from GitHub
 
 ## Available Scripts
 
