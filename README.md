@@ -1,94 +1,96 @@
-# Bulls & Cows Game
+# Ars Riw Ari Ami
 
-A React-based number guessing game where players try to guess a secret number. The game provides feedback in the form of "Bulls" (correct digit in correct position) and "Cows" (correct digit in wrong position).
+A browser-based, two-player **Bulls & Cows** number guessing game built with
+React and Vite. Players take turns guessing a secret number and receive
+feedback about correct digits and positions.
 
 ## Features
 
-- **Two Game Modes:**
-  - **Shared Secret:** Both players guess the same randomly generated number
-  - **Individual Secrets:** Each player sets their own secret number
+- Shared random secret or individual player secrets
+- Configurable number length from 3 to 8 digits
+- Custom player names and starting player
+- Optional per-guess timer from 15 to 180 seconds
+- Bulls and cows feedback for every guess
+- Hot-seat multiplayer on one device
+- Persistent player statistics using browser local storage
+- Responsive interface for desktop and mobile screens
 
-- **Customizable Settings:**
-  - Number of digits (3-8)
-  - Player names
-  - Starting player selection
-  - Optional timer with configurable time per guess (15-180 seconds)
+## Live demo
 
-- **Player Statistics:**
-  - Games played and won
-  - Win rate percentage
-  - Total guesses made
-  - Best completion time
-  - Last played date
-  - All stats saved locally in browser
+Play online: [Ars Riw Ari Ami](https://arsriwariami-game.onrender.com)
 
-- **Enhanced Gameplay:**
-  - Accurate Bulls & Cows algorithm
-  - Timer per guess with automatic turn switching
-  - Visual feedback with timestamps
-  - Hot-seat multiplayer (same device)
-  - First to guess correctly wins
+## Requirements
 
-- **Beautiful UI:**
-  - Modern gradient design
-  - Responsive layout
-  - Real-time game state updates
-  - Enhanced visual feedback for guesses
-  - Player statistics dashboard
+- Node.js 20 or newer
+- npm 9 or newer
 
-## 🚀 Live Demo
+## Local development
 
-**Play the game online:** [ArsRiwAriAmi Game](https://arsriwariami-game.onrender.com)
+```bash
+git clone https://github.com/arslenedjellouli/ArsRiwAriAmi-Jeu.git
+cd ArsRiwAriAmi-Jeu
+npm ci
+npm run dev
+```
 
-## Setup Instructions
+Open the local URL printed by Vite, usually
+[`http://localhost:5173`](http://localhost:5173).
 
-1. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
+## Available commands
 
-2. **Start Development Server:**
-   ```bash
-   npm run dev
-   ```
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run start` | Serve `dist/` using the deployment port |
 
-3. **Open in Browser:**
-   The app will be available at `http://localhost:5173`
+## How to play
 
-## 🌐 Deployment
+1. Choose the game mode and configure the players.
+2. Select the number of digits and optional timer.
+3. In individual mode, each player enters a unique secret number.
+4. Players alternate guesses.
+5. A **bull** is a correct digit in the correct position.
+6. A **cow** is a correct digit in the wrong position.
+7. The first player to discover the secret number wins.
 
-This app is deployed on Render. To deploy your own version:
+Secret numbers and guesses must contain unique numeric digits.
 
-1. Fork this repository
-2. Connect to Render
-3. Deploy automatically from GitHub
+## Project structure
 
-## Available Scripts
+```text
+├── app.jsx          # Game state, rules, screens, and interactions
+├── main.jsx         # React entry point
+├── index.css        # Tailwind utility setup and global styles
+├── index.html       # HTML entry point
+├── package.json      # Scripts and dependencies
+├── render.yaml      # Render deployment configuration
+└── vite.config.js   # Vite configuration
+```
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+## Deployment
 
-## How to Play
+The repository includes a Render configuration. Render can deploy it as a
+static site using:
 
-1. **Setup:** Configure player names, game mode, number of digits, and other settings
-2. **Set Secrets:** If using individual mode, each player enters their secret number
-3. **Take Turns:** Players alternate guessing the secret number
-4. **Get Feedback:** Each guess shows Bulls (B) and Cows (M) feedback
-5. **Win:** First player to guess correctly wins!
+```bash
+npm ci
+npm run build
+```
 
-## Game Rules
+The generated `dist/` directory is intentionally ignored by Git and should be
+created by the deployment platform or local build.
 
-- **Bulls (B):** Correct digit in the correct position
-- **Cows (M):** Correct digit in the wrong position
-- All digits in the secret number must be unique
-- Guesses must also have unique digits
-- Only numeric digits are allowed
+## Contributing
 
-## Technologies Used
+1. Create a feature branch.
+2. Install dependencies with `npm ci`.
+3. Run `npm run build` before opening a pull request.
+4. Describe gameplay or UI changes clearly in the pull request.
 
-- React 18
-- Vite
-- Tailwind CSS
-- Lucide React (icons)
-- Modern ES6+ JavaScript
+## License
+
+No license has currently been declared. Until a license is added, the source
+remains protected by copyright and should not be redistributed or modified
+outside the permissions granted by the repository owner.
