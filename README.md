@@ -71,15 +71,3 @@ npm run build
 The generated `dist/` directory is intentionally ignored by Git and should be
 created by the deployment platform or local build.
 
-## Contributing
-
-1. Create a feature branch.
-2. Install dependencies with `npm ci`.
-3. Run `npm run build` before opening a pull request.
-4. Describe gameplay or UI changes clearly in the pull request.
-
-## License
-
-No license has currently been declared. Until a license is added, the source
-remains protected by copyright and should not be redistributed or modified
-outside the permissions granted by the repository owner.
