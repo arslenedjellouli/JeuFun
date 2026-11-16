@@ -15,23 +15,12 @@ feedback about correct digits and positions.
 - Persistent player statistics using browser local storage
 - Responsive interface for desktop and mobile screens
 
-## Live demo
-
-Play online: [Ars Riw Ari Ami](https://arsriwariami-game.onrender.com)
 
 ## Requirements
 
 - Node.js 20 or newer
 - npm 9 or newer
 
-## Local development
-
-```bash
-git clone https://github.com/arslenedjellouli/ArsRiwAriAmi-Jeu.git
-cd ArsRiwAriAmi-Jeu
-npm ci
-npm run dev
-```
 
 Open the local URL printed by Vite, usually
 [`http://localhost:5173`](http://localhost:5173).
